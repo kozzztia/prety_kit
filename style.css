@@ -1,25 +1,12 @@
 :root {
     --main-color: #333;
+    --main-background-color: #fd2f73;
     --decore-color: #cfff24;
-    --background-color: #f4f4f4;
+    --background-color: #fff;
     --font-size: 16px;
     --max-width: 1400px;
     --padding: 10px;
     --border: 1px solid var(--main-color);
-    --header-height: 100px;
-    --footer-height: 200px;
-
-    @media (min-width: 678px) {
-        --padding: 10px 30px;
-        --header-height: 70px;
-        --footer-height: 120px;
-    }
-
-    @media (min-width: 1400px) {
-        --padding: 10px 40px;
-        --header-height: 70px;
-        --footer-height: 120px;
-    }
 }
 
 * {
@@ -35,25 +22,10 @@ body {
     font-size: var(--font-size);
 }
 
-header,
-main,
-footer {
-    max-width: var(--max-width);
-    padding: var(--padding);
-    border: var(--border);
-    margin: 0 auto;
-}
-
-header {
-    height: var(--header-height);
-    background: var(--main-color);
-}
-
-footer {
-    background: var(--main-color);
-    height: var(--footer-height);
-}
-
 main {
-    min-height: calc(100vh - var(--header-height) - var(--footer-height));
+    background: var(--main-background-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

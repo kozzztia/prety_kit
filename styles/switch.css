@@ -1,0 +1,48 @@
+:root{
+    --box-shadow-inset: inset 0 1px 5px rgba(0, 0, 0, .7);
+    --box-shadow: 0px 1px 4px rgba(0, 0, 0, .7);
+    --transition: all .4s ease-in-out;
+    --day-color: rgba(255, 255, 0, 1);
+    --night-color: rgba(255,255 ,255, 1);
+}
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    background: var(--background-color) url("../assets/310072.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 20px 10px;
+    border-radius: 50px;
+    box-shadow: var(--box-shadow-inset), var(--box-shadow);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: var(--transition);
+
+    input{
+        display: none;
+        visibility: hidden;
+    }
+    div{
+        width :50%;
+        height: 100%;
+        border-radius: 50px;
+        background: var(--day-color);
+        box-shadow: var(--box-shadow-inset), var(--box-shadow);
+        position: absolute;
+        transition: inherit;
+        top: 0;
+        left: 0;
+    }
+    input:checked + div{
+        background: var(--night-color);
+        left: 50%;
+    }
+    &:has(input:checked){
+        background-position: -20px 10px;
+    }
+}
+
