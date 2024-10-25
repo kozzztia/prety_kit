@@ -24,7 +24,6 @@ body {
 }
 
 main {
-    background: var(--main-background-color);
     min-height: 100vh;
     display: flex;
     justify-content: center;

@@ -6,9 +6,17 @@
     --night-color: rgba(255, 255, 255, 1);
     --background-night: rgb(68, 68, 68);
     --background-day: rgb(172, 243, 238);
+    --bg: #fff;
 }
+    &:has(input:checked) {
+        --bg: #000;
+    }
 .img{
     user-select: none;
+}
+main{
+    transition: var(--transition);
+    background: var(--bg);
 }
 
 .switch {
