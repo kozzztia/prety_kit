@@ -123,10 +123,10 @@ main{
             opacity: 0.2;
         }
     }
-    &:hover{
+    /* &:hover{
         .circle{
             rotate: 90deg;
         }
-    }
+    } */
 }
 /* test */
