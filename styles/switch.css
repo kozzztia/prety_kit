@@ -7,6 +7,9 @@
     --background-night: rgb(68, 68, 68);
     --background-day: rgb(172, 243, 238);
 }
+.img{
+    user-select: none;
+}
 
 .switch {
     position: relative;
