@@ -1,6 +1,7 @@
 :root {
     --main-color: #333;
-    --main-background-color: #fd2f73;
+    /* --main-background-color: #fd2f73; */
+    background: #fff;
     --decore-color: #cfff24;
     --background-color: #fff;
     --font-size: 16px;
