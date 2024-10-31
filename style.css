@@ -22,6 +22,6 @@ body {
 main {
     min-height: 100vh;
     max-width: 100vw;
-    background: var(--main-color);
+    /* background: var(--main-color); */
     padding : 200px 0;
 }
