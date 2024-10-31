@@ -12,6 +12,7 @@
     background: inherit;
     border-radius: 50px;
     position: relative;
+    -webkit-tap-highlight-color: transparent; 
     span{
         border-radius: 50px;
         position: absolute;
